@@ -155,7 +155,7 @@ def build_rss(items, feed_path):
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<rss version="2.0"><channel>',
         "<title>Pre-Facelift NA2 NSX Watch (1997-2001, manual)</title>",
-        "<link>https://github.com/</link>",
+        "<link>https://aarondavis91.github.io/nsx-feed/</link>",
         "<description>Auto-generated feed of matching Acura NSX listings. "
         "Edit the &lt;link&gt; above to your GitHub Pages URL.</description>",
         f"<lastBuildDate>{now}</lastBuildDate>",
