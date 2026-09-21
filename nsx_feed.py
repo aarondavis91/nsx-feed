@@ -38,6 +38,7 @@ real manual listing because of a parsing miss. Adjust is_manual_text()
 if you want it stricter.
 """
 
+import os
 import re
 import sys
 import html
@@ -145,6 +146,10 @@ SOURCES = [
 
 
 def build_rss(items, feed_path):
+    parent = os.path.dirname(feed_path)
+    if parent:
+        os.makedirs(parent, exist_ok=True)
+
     now = format_datetime(datetime.now(timezone.utc))
     parts = [
         '<?xml version="1.0" encoding="UTF-8"?>',
